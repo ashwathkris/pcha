@@ -32,7 +32,7 @@ app_ui = ui.page_fluid(
     ui.sidebar(ui.input_select("user_id", label="Select User", choices=users), 
             #    ui.input_slider("start_date_slider", "Start Date", min_date, max_date, min_date),
             #    ui.input_slider("end_date_slider", "End Date",  min_date, max_date, max_date),
-            ui.input_text("start_day", label="Start Day", placeholder="DD"),
+            # ui.input_text("start_day", label="Start Day", placeholder="DD"),
             ui.input_text("start_month", label="Start Month", placeholder="MM"),
             ui.input_text("start_year", label="Start Year", placeholder="YYYY"),
             ui.input_text("end_day", label="End Day", placeholder="DD"),

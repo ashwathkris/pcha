@@ -28,14 +28,12 @@ jobs:
 
       # Step 4: Authenticate with Posit Connect
       - name: Add Posit Connect Account
-        env:
-          CONNECT_API_KEY: ${{ secrets.POSIT_API_KEY }}  # Add this in your GitHub Secrets
-        run: |
-          rsconnect add \
-            --account ashwathkris \
-            --name ashwathkris \
-            --token ${{ secrets.POSIT_API_KEY }} \
-            --secret ${{ secrets.POSIT_API_SECRET }}  # Add this in your GitHub Secrets
+				run: |
+					rsconnect add \
+						--account ashwathkris \
+						--name ashwathkris \
+						--token ${{ secrets.POSIT_API_KEY }} \
+						--secret ${{ secrets.POSIT_API_SECRET }}
 
       # Step 5: Deploy to Posit Connect
       - name: Deploy Application

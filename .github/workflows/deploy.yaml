@@ -38,6 +38,6 @@ jobs:
       # Step 5: Deploy to Posit Connect
       - name: Deploy Application
         run: |
-          rsconnect deploy shiny . \
+          rsconnect deploy shiny Dashboard \
             --name ashwathkris \
             --title pcha-test
